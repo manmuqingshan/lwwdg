@@ -2,6 +2,8 @@
 
 ## Develop
 
+- Rework library CMake with removed INTERFACE type
+
 ## v1.1.2
 
 - Fix race condition in `lwwdg_process` function

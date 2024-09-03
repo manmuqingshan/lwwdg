@@ -26,9 +26,9 @@ set(lwwdg_include_DIRS
 )
 
 # Register library to the system
-add_library(lwwdg INTERFACE)
-target_sources(lwwdg INTERFACE ${lwwdg_core_SRCS})
-target_include_directories(lwwdg INTERFACE ${lwwdg_include_DIRS})
+add_library(lwwdg)
+target_sources(lwwdg PRIVATE ${lwwdg_core_SRCS})
+target_include_directories(lwwdg PUBLIC ${lwwdg_include_DIRS})
 target_compile_options(lwwdg PRIVATE ${LWWDG_COMPILE_OPTIONS})
 target_compile_definitions(lwwdg PRIVATE ${LWWDG_COMPILE_DEFINITIONS})
 
